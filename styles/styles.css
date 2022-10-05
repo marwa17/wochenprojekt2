@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+
+p {
+    text-align: center;
+}
+/*************** Header Anfang *****************/
+#HederSocialMedia img {
+    border-radius: 50%;
+    background-color: bisque;
+}
+/*************** Header Ende *****************/
+
+/*************** Main Anfang *****************/
+
+/*************** recipe Section *****************/
+
+#recipe-section p {
+    text-align: right;
+    margin: 20px;
+}
+/*************** Main Ende *****************/
+
+/*************** Footer Anfang *****************/
+
+/*************** Footer Ende *****************/
