@@ -23,8 +23,9 @@ p {
 /*************** recipe Section *****************/
 #recipe-section img {
     display:block;
-    margin: 40px auto 40px;
+    margin: 40px;
     height: 400px;
+    max-width: 300px;
 }
 #recipe-section h3 {
     text-align: center;
@@ -35,11 +36,13 @@ p {
     margin: 0 20px 40px 0;
     color: grey;
 }
-#recipe-container {
+.recipe-container {
     display: flex;
+    justify-content: center;
     margin: auto;
     flex-direction: row;
-    background-color: lightgreen;
+    flex-wrap: wrap;
+    /* background-color: lightgreen; */
 }
 
 .recipe {
@@ -50,6 +53,7 @@ p {
     border: 1px solid;
     margin-bottom: 40px;
     border-color: grey;
+    margin: 10px;
 }
 /*************** Main Ende *****************/
 
