@@ -91,14 +91,25 @@ p {
 
 /***************Filter Section *****************/
 #filter-section {
-    width: 70%;
+    width: 90%;
     margin: auto;
-    height: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#filter-section select {
+    width: auto;
+    height: 30px;
+    text-align: center;
+    font-family: Arial;
+    background-color: linen;
+    border-radius: 10px;
 }
 
 /*************** recipe Section *****************/
 #recipe-section img {
-    display:block;
+    display: block;
     margin: 40px;
     height: 400px;
     max-width: 300px;
