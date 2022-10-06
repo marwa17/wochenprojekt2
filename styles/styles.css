@@ -60,6 +60,13 @@ ul {
 /*************** Header Ende *****************/
 
 /*************** Main Anfang *****************/
+
+body {
+
+    background-image: linear-gradient(to top, white 0%, bisque 50%);
+    background-image: linear-gradient(to right, white 0%, bisque 50%);
+    background-image: linear-gradient(45deg, white 0%, bisque 50%);
+}
 /*************** introduction Section *****************/
 #introduction {
   width: 90%;
@@ -120,7 +127,9 @@ ul {
     margin: 40px;
     height: 400px;
     max-width: 300px;
-
+    justify-content: center;
+    object-fit: cover;
+    border-radius: 50%;
 }
 #recipe-section h3 {
   text-align: center;
@@ -132,24 +141,38 @@ ul {
   color: grey;
 }
 .recipe-container {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  flex-direction: row;
-  flex-wrap: wrap;
-  /* background-color: lightgreen; */
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* background-color: lightgreen; */
 }
 
 .recipe {
-  display: flex;
-  flex-direction: column;
-  background-color: lightgray;
-  width: 400px;
-  border: 1px solid;
-  margin-bottom: 40px;
-  border-color: grey;
-  margin: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 228, 196, 50);
+    align-items: center;
+    width: 400px;
+    border: 1px solid;
+    margin-bottom: 40px;
+    border-color: grey;
+    margin: 10px;
+    border-radius: 80px;
+    transition: background-color .4s ease-in-out;   
 }
+
+.recipe:hover {
+    background-color: rgb(255, 203, 107);
+    transform: scale(1.2);
+    border-radius: 30px;
+
+}
+#recipe-section .recipe:hover img{
+    border-radius: 5px;
+    transition: border-radius .2s ease-in-out;  
+}
+
 /*************** Main Ende *****************/
 
 /*************** Footer Anfang *****************/
