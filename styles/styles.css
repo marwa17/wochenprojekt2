@@ -97,10 +97,39 @@ p {
 }
 
 /*************** recipe Section *****************/
-
-#recipe-section p {
+#recipe-section img {
+    display:block;
+    margin: 40px;
+    height: 400px;
+    max-width: 300px;
+}
+#recipe-section h3 {
+    text-align: center;
+    color: black;
+}
+#recipe-section h4 {
     text-align: right;
-    margin: 20px;
+    margin: 0 20px 40px 0;
+    color: grey;
+}
+.recipe-container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* background-color: lightgreen; */
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    width: 400px;
+    border: 1px solid;
+    margin-bottom: 40px;
+    border-color: grey;
+    margin: 10px;
 }
 /*************** Main Ende *****************/
 
