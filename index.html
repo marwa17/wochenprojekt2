@@ -57,18 +57,30 @@
     </section>
 
     <section id="filter-section">
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-          data-bs-toggle="dropdown" aria-expanded="false">
-          Kategorie
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" href="#">Backen</a></li>
-          <li><a class="dropdown-item" href="#">Kochen</a></li>
 
-        </ul>
-      </div>
+      <select id="Category-select">
+        <option>Kategory</option>
+        <option>Backen</option>
+        <option>Kochen</option>
 
+      </select>
+
+      <select id="type-select">
+
+        <option>Vegan oder Vegetarisch</option>
+        <option>Vegan</option>
+        <option>Vegetarisch</option>
+
+      </select>
+      <!-- <input list="difficulty-select" id="difficulty-filter" name="difficulty"> -->
+      <select id="difficulty-select">
+
+        <option value="schwierigkeit">Schwierigkeit</option>
+        <option value="leicht">Licht</option>
+        <option value="normal">Normal</option>
+        <option value="mittel">Mittel</option>
+        <option value="hard">Hard</option>
+      </select>
 
     </section>
 
@@ -176,39 +188,37 @@
   </main>
 
   <footer class="container-fluid">
-    <div class="social">
-      <a href="#">
-        <img src="./img/facebook.png" alt="Facebook Logo" />
-      </a>
-      <a href="#">
-        <img src="./img/instagram.png" alt="Instagram Logo" />
-      </a>
-      <a href="#">
-        <img src="./img/dribbble.png" alt="Dribbble Logo" />
-      </a>
-      <a href="#">
-        <img src="./img/twitter.png" alt="Twitter Logo" />
-      </a>
+    <div class="container">
+      <div class="social">
+        <a href="#">
+          <img src="./img/facebook.png" alt="Facebook Logo" />
+        </a>
+        <a href="#">
+          <img src="./img/instagram.png" alt="Instagram Logo" />
+        </a>
+        <a href="#">
+          <img src="./img/dribbble.png" alt="Dribbble Logo" />
+        </a>
+        <a href="#">
+          <img src="./img/twitter.png" alt="Twitter Logo" />
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Impressum</a>
+          </li>
+          <li>
+            <a href="#">Datenschutz</a>
+          </li>
+        </ul>
+      </nav>
+      <p>&copy; Copyright Cookbook 2022</p>
     </div>
-    <nav>
-      <ul>
-        <li>
-          <a href="#">Impressum</a>
-        </li>
-        <li>
-          <a href="#">Datenschutz</a>
-        </li>
-      </ul>
-    </nav>
-    <p>Copyright &copy; Marcos Kochstudio</p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
-
-
-
-
 
   <script src="./js/main.js" language="javascript" type="text/javascript"></script>
 </body>

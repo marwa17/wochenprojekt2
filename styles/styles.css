@@ -1,55 +1,60 @@
 h1 {
-    text-align: center;
+  text-align: center;
 }
 h2 {
-    text-align: center;
+  text-align: center;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 p {
-    text-align: center;
+  text-align: center;
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
 }
 /*************** Header Anfang *****************/
 #header {
-    width: 100%;
+  width: 100%;
 }
 #header nav {
-    width: 80%;
+  width: 80%;
 
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
 #marcoLogo {
-    width: 150px;
+  width: 150px;
 }
 
 #HederSocialMedia img {
-    border-radius: 50%;
-    background-color: bisque;
+  border-radius: 50%;
+  background-color: bisque;
 }
 #HederSocialMedia img:hover {
-    background-color: orange;
+  background-color: orange;
 }
 
 #nav-link {
-    order: 3;
+  order: 3;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 #nav-Menu a {
-    padding-right: 7px;
-    text-decoration: none;
-    color: rgb(239, 65, 65);
-    font-weight: bold;
+  padding-right: 7px;
+  text-decoration: none;
+  color: rgb(239, 65, 65);
+  font-weight: bold;
 }
 #nav-Menu a:hover {
-    color: brown;
+  color: brown;
 }
 
 /*************** Header Ende *****************/
@@ -64,19 +69,19 @@ body {
 }
 /*************** introduction Section *****************/
 #introduction {
-    width: 90%;
-    margin: 50px auto;
-    padding-bottom: 50px;
+  width: 90%;
+  margin: 50px auto;
+  padding-bottom: 50px;
 }
 .jumbotron {
-    background-color: linen;
-    padding: 50px 0;
+  background-color: linen;
+  padding: 50px 0;
 }
 #introduction h1 {
-    color: brown;
+  color: brown;
 }
 #introduction h1:hover {
-    color: rgb(200, 112, 112);
+  color: rgb(200, 112, 112);
 }
 
 /* #introduction p:first-child {
@@ -84,28 +89,41 @@ body {
 } */
 
 #introduction p {
-    width: 60%;
-    margin: auto;
-    text-align: center;
-    color: rgb(62, 40, 40);
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  color: rgb(62, 40, 40);
 }
 
 #introduction hr {
-    color: brown;
-    width: 80%;
-    margin: auto;
+  color: brown;
+  width: 80%;
+  margin: auto;
 }
 
 /***************Filter Section *****************/
 #filter-section {
-    width: 70%;
+
+    width: 90%;
     margin: auto;
-    height: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#filter-section select {
+    width: auto;
+    height: 30px;
+    text-align: center;
+    font-family: Arial;
+    background-color: linen;
+    border-radius: 10px;
+
 }
 
 /*************** recipe Section *****************/
 #recipe-section img {
-    display:block;
+    display: block;
     margin: 40px;
     height: 400px;
     max-width: 300px;
@@ -114,17 +132,16 @@ body {
     border-radius: 50%;
 }
 #recipe-section h3 {
-    text-align: center;
-    color: black;
+  text-align: center;
+  color: black;
 }
 #recipe-section h4 {
-    text-align: right;
-    margin: 0 20px 40px 0;
-    color: grey;
+  text-align: right;
+  margin: 0 20px 40px 0;
+  color: grey;
 }
 .recipe-container {
     display: flex;
-    
     margin: auto;
     flex-direction: row;
     flex-wrap: wrap;
@@ -159,5 +176,35 @@ body {
 /*************** Main Ende *****************/
 
 /*************** Footer Anfang *****************/
-
+footer {
+  background-color: linen;
+  padding-bottom: 20px;
+  margin-top: 50px;
+}
+footer .social {
+  padding-block: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+footer .social a {
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  transition: box-shadow 0.2s ease-in-out;
+}
+footer .social a:hover {
+  box-shadow: 0 0 10px #fff;
+}
+footer nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+footer nav a {
+  color: hsl(0, 0%, 0%);
+  transition: color 0.2s ease-in-out;
+}
+footer nav a:hover {
+  color: rgb(165, 42, 42);
+}
 /*************** Footer Ende *****************/
