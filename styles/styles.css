@@ -12,13 +12,89 @@ p {
     text-align: center;
 }
 /*************** Header Anfang *****************/
+#header {
+    width: 100%;
+}
+#header nav {
+    width: 80%;
+
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#marcoLogo {
+    width: 150px;
+}
+
 #HederSocialMedia img {
     border-radius: 50%;
     background-color: bisque;
 }
+#HederSocialMedia img:hover {
+    background-color: orange;
+}
+
+#nav-link {
+    order: 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#nav-Menu a {
+    padding-right: 7px;
+    text-decoration: none;
+    color: rgb(239, 65, 65);
+    font-weight: bold;
+}
+#nav-Menu a:hover {
+    color: brown;
+}
+
 /*************** Header Ende *****************/
 
 /*************** Main Anfang *****************/
+/*************** introduction Section *****************/
+#introduction {
+    width: 90%;
+    margin: 50px auto;
+    padding-bottom: 50px;
+}
+.jumbotron {
+    background-color: linen;
+    padding: 50px 0;
+}
+#introduction h1 {
+    color: brown;
+}
+#introduction h1:hover {
+    color: rgb(200, 112, 112);
+}
+
+/* #introduction p:first-child {
+    text-align: center;
+} */
+
+#introduction p {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    color: rgb(62, 40, 40);
+}
+
+#introduction hr {
+    color: brown;
+    width: 80%;
+    margin: auto;
+}
+
+/***************Filter Section *****************/
+#filter-section {
+    width: 70%;
+    margin: auto;
+    height: 200px;
+}
 
 /*************** recipe Section *****************/
 
