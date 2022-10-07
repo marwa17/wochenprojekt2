@@ -9,7 +9,6 @@ a {
 }
 
 p {
-  text-align: center;
   margin: 0;
 }
 ul {
@@ -275,7 +274,18 @@ body {
   right: 0;
   top: 0;
 }
+#recipe article {
+  margin-block: 100px;
+}
 #recipe section {
+  margin-top: 50px;
+}
+#recipe table {
+  margin-bottom: 50px;
+}
+#recipe .details {
+  display: flex;
+  flex-direction: column;
 }
 
 #recipe main img {
@@ -283,6 +293,7 @@ body {
   max-height: 600px;
   object-fit: cover;
   object-position: bottom;
+  margin: 0 auto 50px;
 }
 
 #recipe .divider {
@@ -303,6 +314,15 @@ body {
   #recipe h1::after,
   #recipe h1::before {
     display: block;
+  }
+  #recipe .details {
+    display: block;
+  }
+  #recipe section {
+    margin-top: 100px;
+  }
+  #recipe table {
+    margin-bottom: 0;
   }
 }
 /*************** Rezeptseiten Ende *****************/
@@ -340,5 +360,8 @@ footer nav a {
 }
 footer nav a:hover {
   color: rgb(165, 42, 42);
+}
+footer p {
+  text-align: center;
 }
 /*************** Footer Ende *****************/
