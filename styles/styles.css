@@ -229,6 +229,7 @@ body {
   margin: auto;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   /* background-color: lightgreen; */
 }
 
@@ -244,7 +245,7 @@ body {
     border-color: grey;
     margin: 10px;
     border-radius: 80px;
-    transition: background-color 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out, transform .2s ease-in-out;
 }
 
 .recipe:hover {
