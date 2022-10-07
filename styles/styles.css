@@ -210,11 +210,6 @@ body {
 #filter-section select:hover {
     box-shadow: 0 0 10px 100px brown inset;
 }
-#filter-section select option {
-    box-shadow: 0 0 10px 100px #1882a8 inset;
-
-    cursor: alias;
-}
 
 @media (max-width: 500px) {
     #filter-section {
@@ -255,6 +250,7 @@ body {
     margin: auto;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     /* background-color: lightgreen; */
 }
 
@@ -269,7 +265,7 @@ body {
     border-color: grey;
     margin: 10px;
     border-radius: 80px;
-    transition: background-color 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .recipe:hover {
