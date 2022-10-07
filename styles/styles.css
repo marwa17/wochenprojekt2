@@ -31,10 +31,14 @@ ul {
     width: 120px;
 }
 #nav-link {
-    order: 3;
-
     display: flex;
     flex-direction: column;
+
+    justify-content: space-evenly;
+}
+#HeaderSocialMedia {
+    display: flex;
+
     justify-content: space-evenly;
 }
 #HeaderSocialMedia img {
@@ -45,11 +49,16 @@ ul {
     background-color: orange;
 }
 
+.nav-Menu {
+    flex-grow: 0;
+    margin-top: 5px;
+}
 .nav-Menu ul {
-    margin: 0;
+    margin: 10px;
     padding: 0;
     display: flex;
-    /* background-color: aqua; */
+    /* 
+    background-color: aqua;*/
 }
 
 .nav-Menu li {
@@ -58,19 +67,20 @@ ul {
 
 .nav-Menu li a {
     text-decoration: none;
-    padding: 0.3rem;
+    padding: 0.1rem 0.3rem;
     display: block;
     color: rgb(239, 65, 65);
 }
 
 .nav-Menu li:hover {
-    background-color: rgb(238, 227, 216);
+    background-color: rgb(231, 179, 159);
     border-radius: 5px;
 }
 
 .nav-Menu a:hover {
     color: brown;
-    font-weight: bold;
+    /* font-weight: bold; */
+    transform: scale(1.1);
 }
 .toggle-button {
     position: absolute;
@@ -90,7 +100,7 @@ ul {
     border-radius: 10px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .toggle-button {
         display: flex;
     }
@@ -128,9 +138,6 @@ ul {
     }
 }
 
-.animate-charcter {
-}
-
 /* #nav-Menu a {
   padding-right: 7px;
   text-decoration: none;
@@ -144,11 +151,9 @@ ul {
 /*************** Main Anfang *****************/
 
 body {
-
-  background: linear-gradient(to top, white 0%, bisque 50%);
-  background: linear-gradient(to right, white 0%, bisque 50%);
-  background: linear-gradient(45deg, white 0%, bisque 50%);
-
+    background: linear-gradient(to top, white 0%, bisque 50%);
+    background: linear-gradient(to right, white 0%, bisque 50%);
+    background: linear-gradient(45deg, white 0%, bisque 50%);
 }
 /*************** introduction Section *****************/
 #introduction {
@@ -167,10 +172,6 @@ body {
     color: rgb(200, 112, 112);
 }
 
-/* #introduction p:first-child {
-    text-align: center;
-} */
-
 #introduction p {
     width: 60%;
     margin: auto;
@@ -183,13 +184,17 @@ body {
     width: 80%;
     margin: auto;
 }
+@media (max-width: 500px) {
+    #introduction {
+        margin-bottom: 10px;
+    }
+}
 
 /***************Filter Section *****************/
 #filter-section {
-
     width: 90%;
-    margin: auto;
-    height: 100px;
+    margin: 50px auto;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
 }
@@ -201,19 +206,35 @@ body {
     font-family: Arial;
     background-color: linen;
     border-radius: 10px;
-
+}
+#filter-section select:hover {
+    box-shadow: 0 0 10px 100px brown inset;
 }
 
+@media (max-width: 500px) {
+    #filter-section {
+        margin-top: 0;
+        flex-direction: column;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+    #filter-section select {
+        margin-bottom: 10px;
+    }
+    #filter-section select option {
+        padding: 20px;
+    }
+}
 
 /*************** recipe Section *****************/
 #recipe-section img {
-  display: block;
-  margin: 40px;
-  height: 400px;
-  max-width: 300px;
-  justify-content: center;
-  object-fit: cover;
-  border-radius: 50%;
+    display: block;
+    margin: 40px;
+    height: 400px;
+    max-width: 300px;
+    justify-content: center;
+    object-fit: cover;
+    border-radius: 50%;
 }
 #recipe-section h3 {
     text-align: center;
@@ -225,16 +246,15 @@ body {
     color: grey;
 }
 .recipe-container {
-  display: flex;
-  margin: auto;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  /* background-color: lightgreen; */
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: lightgreen; */
 }
 
 .recipe {
-
     display: flex;
     flex-direction: column;
     background-color: rgba(255, 228, 196, 50);
@@ -245,7 +265,7 @@ body {
     border-color: grey;
     margin: 10px;
     border-radius: 80px;
-    transition: background-color 0.4s ease-in-out, transform .2s ease-in-out;
+    transition: background-color 0.4s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .recipe:hover {
@@ -254,54 +274,53 @@ body {
     border-radius: 30px;
 }
 
-
 #recipe-section .recipe:hover img {
-  border-radius: 5px;
-  transition: border-radius 0.2s ease-in-out;
+    border-radius: 5px;
+    transition: border-radius 0.2s ease-in-out;
 }
 
 /*************** Rezeptseiten Anfang *****************/
 
 #recipe h1 {
-  position: relative;
+    position: relative;
 }
 #recipe h1:before {
-  content: "";
-  position: absolute;
-  display: block;
-  height: 33.5px;
-  width: 30%;
-  border-bottom: 1px solid #000;
+    content: "";
+    position: absolute;
+    display: block;
+    height: 33.5px;
+    width: 30%;
+    border-bottom: 1px solid #000;
 }
 #recipe h1::after {
-  content: "";
-  position: absolute;
-  display: block;
-  height: 33.5px;
-  width: 30%;
-  border-bottom: 1px solid #000;
-  right: 0;
-  top: 0;
+    content: "";
+    position: absolute;
+    display: block;
+    height: 33.5px;
+    width: 30%;
+    border-bottom: 1px solid #000;
+    right: 0;
+    top: 0;
 }
 
 #recipe main img {
-  width: clamp(300px, 35vw, 80%);
-  max-height: 600px;
-  object-fit: cover;
-  object-position: bottom;
+    width: clamp(300px, 35vw, 80%);
+    max-height: 600px;
+    object-fit: cover;
+    object-position: bottom;
 }
 
 #recipe .divider {
-  position: relative;
+    position: relative;
 }
 #recipe .divider:before {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 100%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  background-color: #000;
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #000;
 }
 /*************** Rezeptseiten Ende *****************/
 
