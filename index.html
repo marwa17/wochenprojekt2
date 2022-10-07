@@ -13,22 +13,31 @@
 
 <body>
   <header class="container-fluid" id="header">
-    <nav>
+    <nav id="navbar">
       <div id="nav-logo">
         <img id="marcoLogo" src="./img/marcoLogo.png" alt="Marco Logo" />
       </div>
       <div id="nav-link">
-        <div id="HederSocialMedia">
+        <div id="HeaderSocialMedia">
           <a href="#"><img src="./img/twitter.png" alt="twitter" /></a>
           <a href="#"><img src="./img/youtube.png" alt="youtube" /></a>
           <a href="#"><img src="./img/facebook.png" alt="facebook" /></a>
           <a href="#"><img src="./img/instagram.png" alt="instagram" /></a>
         </div>
 
-        <div id="nav-Menu">
-          <a href="#">Home<a>
-              <a href="#">About<a>
-                  <a href="#">Search <a>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+
+        </a>
+
+        <div class="nav-Menu">
+          <ul>
+            <li><a href="#">Home<a></a></li>
+            <li><a href="#">About<a></a></li>
+            <li><a href="#">Search <a></a></li>
+          </ul>
         </div>
 
       </div>
@@ -38,7 +47,7 @@
   <main class="container">
     <section id="introduction">
       <div class="jumbotron">
-        <h1 class="display-4">Willkommen auf meinem Blog</h1>
+        <h1 class="display-4 animate-charcter">Willkommen auf meinem Blog</h1>
         <p class="lead">Hier finden Sie die besten Herbstrezepte</p>
         <hr class="my-4">
         <p> orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
@@ -82,101 +91,86 @@
 
     <section id="recipe-section">
       <div class="recipe-container">
-        <a href="brownie.html">
-          <div class="recipe">
-            <div class="img">
-              <img src="img/brownie.jpg">
-            </div>
-            <div>
-              <h3>Karamell Brownie</h3>
-              <h4>Vegan</h4>
-            </div>
+        <div class="recipe">
+          <div class="img">
+            <img src="img/brownie.jpg">
           </div>
-        </a>
+          <div>
+            <h3>Brownie</h3>
+            <h4>Vegan</h4>
+          </div>
+        </div>
 
-        <a href="brownie.html">
-          <div class="recipe">
-            <div class="img">
-              <img src="img/burger.jpg">
-            </div>
-            <div>
-              <h3>Burger Deluxe</h3>
-              <h4>Non Vegan</h4>
-            </div>
+        <div class="recipe">
+          <div class="img">
+            <img src="img/burger.jpg">
           </div>
-        </a>
+          <div>
+            <h3>Burger Deluxe</h3>
+            <h4>Vegan</h4>
+          </div>
+        </div>
 
-        <a href="brownie.html">
-          <div class="recipe">
-            <div class="img">
-              <img src="img/eis.jpg">
-            </div>
-            <div>
-              <h3>Eis am Stock</h3>
-              <h4>Vegan</h4>
-            </div>
+        <div class="recipe">
+          <div class="img">
+            <img src="img/eis.jpg">
           </div>
-        </a>
+          <div>
+            <h3>Eis am Stock</h3>
+            <h4>Vegan</h4>
+          </div>
+        </div>
 
-        <a href="brownie.html">
-          <div class="recipe">
-            <div class="img">
-              <img src="img/eisInGlas.jpg">
-            </div>
-            <div>
-              <h3>Vereistes Glas</h3>
-              <h4>Vegan</h4>
-            </div>
+        <div class="recipe">
+          <div class="img">
+            <img src="img/eisInGlas.jpg">
           </div>
-        </a>
+          <div>
+            <h3>Vereistes Glas</h3>
+            <h4>Vegan</h4>
+          </div>
+        </div>
 
-        <a href="brownie.html">
-          <div class="recipe">
-            <div class="img">
-              <img src="img/eisInWaffel.jpg">
-            </div>
-            <div>
-              <h3>Gewaffeltes Eis</h3>
-              <h4>Vegan</h4>
-            </div>
+        <div class="recipe">
+          <div class="img">
+            <img src="img/eisInWaffel.jpg">
           </div>
-        </a>
+          <div>
+            <h3>Gewaffeltes Eis</h3>
+            <h4>Vegan</h4>
+          </div>
+        </div>
 
-        <a href="brownie.html">
-          <div class="recipe">
-            <div class="img">
-              <img src="img/ramen.jpg">
-            </div>
-            <div>
-              <h3>Ramen extreme</h3>
-              <h4>Non Vegan</h4>
-            </div>
+        <div class="recipe">
+          <div class="img">
+            <img src="img/ramen.jpg">
           </div>
-        </a>
+          <div>
+            <h3>Ramen extreme</h3>
+            <h4>Vegan</h4>
+          </div>
+        </div>
 
-        <a href="brownie.html">
-          <div class="recipe">
-            <div class="img">
-              <img src="img/toast.jpg">
-            </div>
-            <div>
-              <h3>Flamed Toast</h3>
-              <h4>Vegan</h4>
-            </div>
+        <div class="recipe">
+          <div class="img">
+            <img src="img/toast.jpg">
           </div>
-        </a>
+          <div>
+            <h3>Flamed Toast</h3>
+            <h4>Vegan</h4>
+          </div>
+        </div>
 
-        <a href="brownie.html">
-          <div class="recipe">
-            <div class="img">
-              <img src="img/torte.jpg">
-            </div>
-            <div>
-              <h3>Torte extreme</h3>
-              <h4>Vegan</h4>
-            </div>
+        <div class="recipe">
+          <div class="img">
+            <img src="img/torte.jpg">
           </div>
-        </a>
+          <div>
+            <h3>Torte extreme</h3>
+            <h4>Torte</h4>
+          </div>
+        </div>
+
       </div>
 
 
@@ -184,37 +178,39 @@
   </main>
 
   <footer class="container-fluid">
-    <div class="container">
-      <div class="social">
-        <a href="#">
-          <img src="./img/facebook.png" alt="Facebook Logo" />
-        </a>
-        <a href="#">
-          <img src="./img/instagram.png" alt="Instagram Logo" />
-        </a>
-        <a href="#">
-          <img src="./img/dribbble.png" alt="Dribbble Logo" />
-        </a>
-        <a href="#">
-          <img src="./img/twitter.png" alt="Twitter Logo" />
-        </a>
-      </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">Impressum</a>
-          </li>
-          <li>
-            <a href="#">Datenschutz</a>
-          </li>
-        </ul>
-      </nav>
-      <p>&copy; Copyright Cookbook 2022</p>
+    <div class="social">
+      <a href="#">
+        <img src="./img/facebook.png" alt="Facebook Logo" />
+      </a>
+      <a href="#">
+        <img src="./img/instagram.png" alt="Instagram Logo" />
+      </a>
+      <a href="#">
+        <img src="./img/dribbble.png" alt="Dribbble Logo" />
+      </a>
+      <a href="#">
+        <img src="./img/twitter.png" alt="Twitter Logo" />
+      </a>
     </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Impressum</a>
+        </li>
+        <li>
+          <a href="#">Datenschutz</a>
+        </li>
+      </ul>
+    </nav>
+    <p>Copyright &copy; Marcos Kochstudio</p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
+
+
+
+
 
   <script src="./js/main.js" language="javascript" type="text/javascript"></script>
 </body>

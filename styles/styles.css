@@ -1,87 +1,168 @@
 h1 {
-  text-align: center;
+    text-align: center;
 }
 h2 {
-  text-align: center;
+    text-align: center;
 }
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 p {
-  text-align: center;
-  margin: 0;
+    text-align: center;
+    margin: 0;
 }
 ul {
-  list-style-type: none;
-  padding-inline-start: 0;
+    list-style-type: none;
+    padding-inline-start: 0;
 }
 /*************** Header Anfang *****************/
 #header {
-  width: 100%;
+    width: 100%;
 }
-#header nav {
-  width: 80%;
+#navbar {
+    width: 80%;
 
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
 }
 #marcoLogo {
-  width: 150px;
+    width: 120px;
 }
-
-#HederSocialMedia img {
-  border-radius: 50%;
-  background-color: bisque;
-}
-#HederSocialMedia img:hover {
-  background-color: orange;
-}
-
 #nav-link {
-  order: 3;
+    order: 3;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#HeaderSocialMedia img {
+    border-radius: 50%;
+    background-color: bisque;
+}
+#HeaderSocialMedia img:hover {
+    background-color: orange;
 }
 
-#nav-Menu a {
+.nav-Menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* background-color: aqua; */
+}
+
+.nav-Menu li {
+    list-style: none;
+}
+
+.nav-Menu li a {
+    text-decoration: none;
+    padding: 0.3rem;
+    display: block;
+    color: rgb(239, 65, 65);
+}
+
+.nav-Menu li:hover {
+    background-color: rgb(238, 227, 216);
+    border-radius: 5px;
+}
+
+.nav-Menu a:hover {
+    color: brown;
+    font-weight: bold;
+}
+.toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(239, 65, 65);
+    border-radius: 10px;
+}
+
+@media (max-width: 400px) {
+    .toggle-button {
+        display: flex;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #marcoLogo {
+        margin-top: 10px;
+        width: 100px;
+    }
+    #HeaderSocialMedia {
+        display: none;
+    }
+
+    .nav-Menu {
+        /**/
+        display: none;
+        width: 100%;
+    }
+
+    .nav-Menu ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-Menu ul li {
+        text-align: center;
+    }
+    .nav-Menu ul li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .nav-Menu.active {
+        display: flex;
+    }
+}
+
+.animate-charcter {
+}
+
+/* #nav-Menu a {
   padding-right: 7px;
   text-decoration: none;
   color: rgb(239, 65, 65);
   font-weight: bold;
 }
-#nav-Menu a:hover {
-  color: brown;
-}
+ */
 
 /*************** Header Ende *****************/
 
 /*************** Main Anfang *****************/
 
 body {
-
     background-image: linear-gradient(to top, white 0%, bisque 50%);
     background-image: linear-gradient(to right, white 0%, bisque 50%);
     background-image: linear-gradient(45deg, white 0%, bisque 50%);
 }
 /*************** introduction Section *****************/
 #introduction {
-  width: 90%;
-  margin: 50px auto;
-  padding-bottom: 50px;
+    width: 90%;
+    margin: 50px auto;
+    padding-bottom: 50px;
 }
 .jumbotron {
-  background-color: linen;
-  padding: 50px 0;
+    background-color: linen;
+    padding: 50px 0;
 }
 #introduction h1 {
-  color: brown;
+    color: brown;
 }
 #introduction h1:hover {
-  color: rgb(200, 112, 112);
+    color: rgb(200, 112, 112);
 }
 
 /* #introduction p:first-child {
@@ -89,21 +170,20 @@ body {
 } */
 
 #introduction p {
-  width: 60%;
-  margin: auto;
-  text-align: center;
-  color: rgb(62, 40, 40);
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    color: rgb(62, 40, 40);
 }
 
 #introduction hr {
-  color: brown;
-  width: 80%;
-  margin: auto;
+    color: brown;
+    width: 80%;
+    margin: auto;
 }
 
 /***************Filter Section *****************/
 #filter-section {
-
     width: 90%;
     margin: auto;
     height: 100px;
@@ -118,7 +198,6 @@ body {
     font-family: Arial;
     background-color: linen;
     border-radius: 10px;
-
 }
 
 /*************** recipe Section *****************/
@@ -132,13 +211,13 @@ body {
     border-radius: 50%;
 }
 #recipe-section h3 {
-  text-align: center;
-  color: black;
+    text-align: center;
+    color: black;
 }
 #recipe-section h4 {
-  text-align: right;
-  margin: 0 20px 40px 0;
-  color: grey;
+    text-align: right;
+    margin: 0 20px 40px 0;
+    color: grey;
 }
 .recipe-container {
     display: flex;
@@ -159,52 +238,51 @@ body {
     border-color: grey;
     margin: 10px;
     border-radius: 80px;
-    transition: background-color .4s ease-in-out;   
+    transition: background-color 0.4s ease-in-out;
 }
 
 .recipe:hover {
     background-color: rgb(255, 203, 107);
     transform: scale(1.2);
     border-radius: 30px;
-
 }
-#recipe-section .recipe:hover img{
+#recipe-section .recipe:hover img {
     border-radius: 5px;
-    transition: border-radius .2s ease-in-out;  
+    transition: border-radius 0.2s ease-in-out;
 }
 
 /*************** Main Ende *****************/
 
 /*************** Footer Anfang *****************/
 footer {
-  background-color: linen;
-  padding-bottom: 20px;
-  margin-top: 50px;
+    background-color: linen;
+    padding-bottom: 20px;
+    margin-top: 50px;
 }
 footer .social {
-  padding-block: 20px;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
+    padding-block: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }
 footer .social a {
-  mix-blend-mode: difference;
-  border-radius: 50%;
-  transition: box-shadow 0.2s ease-in-out;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    transition: box-shadow 0.2s ease-in-out;
 }
 footer .social a:hover {
-  box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px #fff;
 }
 footer nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
 }
 footer nav a {
-  color: hsl(0, 0%, 0%);
-  transition: color 0.2s ease-in-out;
+    color: hsl(0, 0%, 0%);
+    transition: color 0.2s ease-in-out;
 }
 footer nav a:hover {
-  color: rgb(165, 42, 42);
+    color: rgb(165, 42, 42);
 }
 /*************** Footer Ende *****************/
